@@ -1,0 +1,125 @@
+/* StreamList.css */
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap');
+
+
+
+.material-symbols-outlined {
+    font-variation-settings: 
+      'FILL' 0,
+      'wght' 500,
+      'GRAD' 0,
+      'opsz' 24;
+  }
+  .stream-list-container {
+    width: 50%; /* Set the width to 50% of the page */
+    margin-left: 0; /* Align the form to the left side */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  h1 {
+    text-align: center; /* Align the heading to the left */
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-family: 'Edu AU VIC WA NT Dots', cursive; /* Set the font for the body or specific elements */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Spacing between form elements */
+    font-family: 'Edu AU VIC WA NT Dots', cursive; /* Set the font for the body or specific elements */
+
+  }
+  
+  input[type="text"] {
+    width: 20%; /* Make the input field take up the full container width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 5%;
+  }
+  
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0; /* Space between input and list */
+  }
+  
+  li {
+    display: inline-table; /* Make the list items inline */
+    margin-bottom: 1px; /* Space between list items */
+    font-size: 0.9rem;
+    margin-right: 15px; /* Add spacing between inline items */
+  }
+
+.header-container {
+    display: flex;              
+    align-items: center;       
+    justify-content: center;    
+  }
+  
+  .input-form {
+    display: flex;          /* Use flexbox for the form */
+    justify-content: center; /* Center items horizontally */
+    align-items: center;    /* Center items vertically */
+    margin-top: 20px;      /* Add some margin on top */
+  }
+  
+  .input-box {
+    padding: 10px;         /* Add some padding */
+    margin-right: 10px;    /* Space between input and button */
+    border: 1px solid #ccc; /* Border style for input */
+    border-radius: 5px;    /* Rounded corners */
+  }
+  
+  .submit-button {
+    padding: 10px 15px;    /* Add padding */
+    background-color: #4062e9; /* Green background */
+    color: white;          /* White text color */
+    border: none;          /* No border */
+    border-radius: 5px;    /* Rounded corners */
+    cursor: pointer;        /* Pointer cursor on hover */
+    min-width: 100px;      /* Set a minimum width */
+    text-align: center;     /* Center the text */
+  }
+  
+  .submit-button:hover {
+    background-color: #15b21c; /* Darker green on hover */
+  }
+  .input-list {
+    display: flex;              /* Use flexbox */
+    flex-direction: column;     /* Stack items vertically */
+    align-items: center;        /* Center items horizontally */
+    justify-content: center;     /* Center items vertically */
+    margin-top: 20px;          /* Space above the list */
+    list-style-type: none;      /* Remove bullet points */
+    padding: 0;                 /* Remove default padding */
+  }
+  
+  .input-list li {
+    margin: 5px 0;             /* Space between list items */
+    padding: 10px;             /* Padding inside each list item */
+    background-color: #04c107; /* Light gray background for list items */
+    border-radius: 5px;        /* Rounded corners for list items */
+    width: 20%;                /* Set width of list items to 80% */
+    text-align: center;         /* Center text inside list items */
+    color: #dee4e8;               /* Change this to your desired text color */
+    font-family: 'Edu AU VIC WA NT Dots', cursive; /* Set the font for the body or specific elements */
+    font-size: 1.5em;          /* Increase font size (1.5em can be adjusted) */
+}
