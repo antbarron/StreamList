@@ -88,7 +88,8 @@
     border-radius: 5px;    /* Rounded corners */
   }
   
-  .submit-button {
+  .submit-button, 
+  .save-button {
     padding: 10px 15px;    /* Add padding */
     background-color: #4062e9; /* Green background */
     color: white;          /* White text color */
@@ -97,11 +98,17 @@
     cursor: pointer;        /* Pointer cursor on hover */
     min-width: 100px;      /* Set a minimum width */
     text-align: center;     /* Center the text */
+    font-size: 12px;
+
   }
   
   .submit-button:hover {
     background-color: #15b21c; /* Darker green on hover */
   }
+  .save-button:hover {
+    background-color: #15b21c; /* Darker green on hover */
+  }
+  
   .input-list {
     display: flex;              /* Use flexbox */
     flex-direction: column;     /* Stack items vertically */
@@ -113,13 +120,88 @@
   }
   
   .input-list li {
-    margin: 5px 0;             /* Space between list items */
+    display: flex;
+    margin: 15px 0;             /* Space between list items */
     padding: 10px;             /* Padding inside each list item */
-    background-color: #04c107; /* Light gray background for list items */
+    background-color: #333; /* Dark background for the navbar */
     border-radius: 5px;        /* Rounded corners for list items */
-    width: 20%;                /* Set width of list items to 80% */
+    width: 30%;                /* Set width of list items to 80% */
     text-align: center;         /* Center text inside list items */
     color: #dee4e8;               /* Change this to your desired text color */
     font-family: 'Edu AU VIC WA NT Dots', cursive; /* Set the font for the body or specific elements */
     font-size: 1.5em;          /* Increase font size (1.5em can be adjusted) */
+    justify-content: space-between; /* Ensures proper spacing between text and button */
+    align-items: center; /* Aligns items vertically in the center */
+    margin-bottom: 10px; /* Adds space between list items */
+  }
+
+.remove-button,.play-button {
+  background-color: #4062e9; /* Green background */
+  color: white;
+  border: none;
+  padding: 10px 10px; /* Adjust padding to control button size */
+  font-size: 11px;
+  cursor: pointer;
+  text-align: center; /* Ensures text is centered */
+  margin-left: 5px; /* Adds space between the list item and the button */
+  border-radius: 5px; /* Makes button edges rounded */
+  width: auto; /* Ensure the button adjusts to fit the text */
+  min-width: 25px; /* Optionally, set a minimum width */
+  
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end; /* Ensures buttons stay to the right */
+}
+.play-button:hover {
+  background-color: #15b21c; /* Darker green on hover */
+}
+
+.dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(1000.5, 1.5, 1.5, .85); /* Semi-transparent background */
+  padding: 20px;
+  font-family: 'Edu AU VIC WA NT Dots', cursive; /* Set the font for the body or specific elements */
+  z-index: 1000;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.dialog-title {
+  font-size: 36px; /* Huge letters */
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.go-button {
+  background-color: #4062e9; /* Green background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: auto; /* Ensure the button adjusts to fit the text */
+
+}
+
+.go-button:hover {
+  background-color: #15b21c; /* Darker green on hover */
+}
+.close-button {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: red;
 }
