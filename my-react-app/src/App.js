@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import StreamList from './components/StreamList/StreamList';
 import Movies from './components/Movie/Movies';
-import Cart from './components/Cart';
 import About from './components/About';
+import Cart from './components/Cart/Cart';
+
 import './App.css'; 
 
 const App = () => {
@@ -13,7 +14,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<StreamList />} />
-        <Route path="/movies" element={<Movies />} />
+        <Route path="/movie/:title" element={<Movies />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/about" element={<About />} />
       </Routes>

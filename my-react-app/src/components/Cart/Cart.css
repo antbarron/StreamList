@@ -1,0 +1,89 @@
+/* sets the display mode of the #cart element to flexbox, allowing its child elements to be laid out in a flexible and responsive way. */
+#cart {
+    display: flex;
+    justify-content: space-between; /* Distributes space evenly between items */
+    padding: 20px; /* Adds space inside the container */
+}
+
+.streaming-plans-list {
+    display: flex;
+    flex-direction: column; /* Organizes plans in a vertical list */
+    padding: 0; /* Removes default padding */
+}
+
+/* Plans section */
+.plans-section {
+    flex: 1; /* Allows section to grow */
+    margin-right: 20px; /* Adds space between sections */
+    min-width: 400px; /* Ensures a minimum width for the section */
+}
+
+.section {
+    margin-bottom: 30px; /* Adds space between different sections */
+}
+
+/* Heading styles */
+h1, h2 {
+    color: #333; /* Sets the color of headings */
+}
+
+/* List styles */
+ul {
+    list-style: none; /* Removes default bullet points from the list */
+    padding: 0; /* Removes default padding */
+}
+
+li {
+    margin-bottom: 10px; /* Adds space between list items */
+}
+
+/* Label and input styles */
+label {
+    display: flex;
+    align-items: center; /* Aligns label text and radio buttons vertically */
+    font-size: 1.1em; /* Increases font size */
+}
+
+input[type="radio"] {
+    margin-right: 10px; /* Adds space between the radio button and text */
+}
+
+/* Payment details section */
+.payment-details {
+    flex: 0 0 440px; /* Fixes the width of the payment section */
+    border: 1px solid #ccc; /* Adds a border around the payment section */
+    padding: 20px; /* Adds space inside the section */
+    background-color: #f9f9f9; /* Sets background color for the section */
+}
+
+/* Input field styles */
+input[type="text"] {
+    width: 80%; /* Sets width of input fields */
+    padding: 10px; /* Adds padding inside the input field */
+    margin: 5px 0; /* Adds space around input fields */
+    border: 1px solid #ccc; /* Adds a border to the input fields */
+    border-radius: 4px; /* Rounds the corners of the input fields */
+}
+
+/* Button styles */
+button {
+    width: 80%; /* Sets width of the button */
+    padding: 10px; /* Adds padding inside the button */
+    background-color: blue; /* Sets button background color */
+    color: white; /* Sets button text color */
+    border: none; /* Removes default button border */
+    border-radius: 4px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    margin: 15px 0; /* Adds space around the button */
+}
+
+button:hover {
+    background-color: darkblue; /* Changes button background color on hover */
+}
+
+.plan-img {
+    width: 8vw;
+    height: 8vw;
+    margin-right: 10px;
+}
+

@@ -1,8 +1,6 @@
 /* StreamList.css */
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap');
 
-
-
 .material-symbols-outlined {
     font-variation-settings: 
       'FILL' 0,
@@ -11,13 +9,18 @@
       'opsz' 24;
   }
   .stream-list-container {
-    width: 50%; /* Set the width to 50% of the page */
-    margin-left: 0; /* Align the form to the left side */
-    padding: 15px;
+    
+    display: flex;
+    flex-direction: column; /* or row, depending on your layout */
+    align-items: center; /* centers flex items horizontally */
+    justify-content: center; /* centers flex items vertically */
+    width: 80%; /* or any width that suits your layout */
+    margin: 0 auto; /* centers the container */    padding: 15px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f9f9f9;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    
   }
   
   h1 {
@@ -30,7 +33,7 @@
   form {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Spacing between form elements */
+    gap: 0px; /* Spacing between form elements */
     font-family: 'Edu AU VIC WA NT Dots', cursive; /* Set the font for the body or specific elements */
 
   }
@@ -53,7 +56,6 @@
     cursor: pointer;
     width: 5%;
   }
-  
   
   ul {
     list-style-type: none;
@@ -79,13 +81,15 @@
     justify-content: center; /* Center items horizontally */
     align-items: center;    /* Center items vertically */
     margin-top: 20px;      /* Add some margin on top */
+    
   }
   
   .input-box {
     padding: 10px;         /* Add some padding */
     margin-right: 10px;    /* Space between input and button */
-    border: 1px solid #ccc; /* Border style for input */
+    border: 1px solid #421313; /* Border style for input */
     border-radius: 5px;    /* Rounded corners */
+    
   }
   
   .submit-button, 
@@ -117,15 +121,16 @@
     margin-top: 20px;          /* Space above the list */
     list-style-type: none;      /* Remove bullet points */
     padding: 0;                 /* Remove default padding */
+    
   }
   
   .input-list li {
     display: flex;
     margin: 15px 0;             /* Space between list items */
-    padding: 10px;             /* Padding inside each list item */
+    padding: 10px 15px;             /* Padding inside each list item */
     background-color: #333; /* Dark background for the navbar */
     border-radius: 5px;        /* Rounded corners for list items */
-    width: 30%;                /* Set width of list items to 80% */
+    width: 100%;                /* Set width of list items to 80% */
     text-align: center;         /* Center text inside list items */
     color: #dee4e8;               /* Change this to your desired text color */
     font-family: 'Edu AU VIC WA NT Dots', cursive; /* Set the font for the body or specific elements */
@@ -135,8 +140,8 @@
     margin-bottom: 10px; /* Adds space between list items */
   }
 
-.remove-button,.play-button {
-  background-color: #4062e9; /* Green background */
+.edit-button,.remove-button,.play-button {
+  background-color: #395adf; 
   color: white;
   border: none;
   padding: 10px 10px; /* Adjust padding to control button size */
@@ -204,4 +209,41 @@
 
 .close-button:hover {
   color: red;
+}
+.edit-form {
+  position: absolute; /* Position it over the list item */
+  top: 400px; /* Adjust space from the top of the list item */
+  left: 0; /* Align to the left of the list item */
+  width: calc(100% - 10px); /* Full width minus some space for aesthetics */
+  background-color: rgba(13, 12, 12, 0.5); /* Semi-transparent background */
+  padding: 10px; /* Reduced padding */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  z-index: 10; /* Ensure it appears above other elements */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  
+}
+
+.edit-input-box {
+  flex-grow: 1; /* Allow the input to take available space */
+  margin-right: 10px; /* Space between the input and buttons */
+}
+
+.edit-submit-button,
+.cancel-button {
+  background-color: #4062e9; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  padding: 10px; /* Padding for buttons */
+  font-size: 11px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-align: center; /* Center button text */
+  border-radius: 5px; /* Rounded corners */
+}
+.remove-button:hover {
+  background-color: #15b21c; /* Darker green on hover */
+}
+.edit-button:hover {
+  background-color: #15b21c; /* Darker green on hover */
 }
