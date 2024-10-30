@@ -118,3 +118,34 @@ img {
         height: auto;
     }
 }
+
+.video-overlay {
+    position: fixed; /* Fixed positioning to overlay the entire viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    display: flex; /* Use flexbox to center the player */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 1000; /* Ensure it's on top of other content */
+  }
+  
+  .video-player {
+    position: relative; /* Positioning for the iframe */
+    width: 80%; /* Width of the video player */
+    max-width: 800px; /* Max width to control size */
+  }
+  
+  .close-button {
+    position: absolute; /* Position the close button in the corner */
+    top: 1000px;
+    right: 10px;
+    color: white; /* Button color */
+    background: transparent; /* Transparent background */
+    border: none; /* No border */
+    font-size: 200px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  

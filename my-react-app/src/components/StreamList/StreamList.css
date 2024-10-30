@@ -77,34 +77,28 @@
   }
   
   .input-form {
-    display: flex;          /* Use flexbox for the form */
-    justify-content: center; /* Center items horizontally */
-    align-items: center;    /* Center items vertically */
-    margin-top: 20px;      /* Add some margin on top */
-    
-  }
-  
-  .input-box {
-    padding: 10px;         /* Add some padding */
-    margin-right: 10px;    /* Space between input and button */
-    border: 1px solid #421313; /* Border style for input */
-    border-radius: 5px;    /* Rounded corners */
-    
-  }
-  
-  .submit-button, 
-  .save-button {
-    padding: 10px 15px;    /* Add padding */
-    background-color: #4062e9; /* Green background */
-    color: white;          /* White text color */
-    border: none;          /* No border */
-    border-radius: 5px;    /* Rounded corners */
-    cursor: pointer;        /* Pointer cursor on hover */
-    min-width: 100px;      /* Set a minimum width */
-    text-align: center;     /* Center the text */
-    font-size: 12px;
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    align-items: center; /* Center align all child elements */
 
-  }
+}
+
+.input-box {
+    margin-bottom: 10px; /* Space below the input box */
+}
+
+.button-container {
+    display: flex; /* Use flexbox for horizontal alignment */
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px; /* Space above the button container */
+}
+
+.submit-button,
+.save-button {
+    padding: 10px 15px; /* Adjust padding for a better look */
+    cursor: pointer; /* Show pointer on hover */
+}
+
   
   .submit-button:hover {
     background-color: #15b21c; /* Darker green on hover */
@@ -140,7 +134,7 @@
     margin-bottom: 10px; /* Adds space between list items */
   }
 
-.edit-button,.remove-button,.play-button {
+.reviews-button,.edit-button,.remove-button,.play-button {
   background-color: #395adf; 
   color: white;
   border: none;
@@ -211,10 +205,10 @@
   color: red;
 }
 .edit-form {
-  position: absolute; /* Position it over the list item */
+  position: fixed; /* Position it over the list item */
   top: 400px; /* Adjust space from the top of the list item */
-  left: 0; /* Align to the left of the list item */
-  width: calc(100% - 10px); /* Full width minus some space for aesthetics */
+  left: 10; /* Align to the left of the list item */
+  width: 100; /* Full width minus some space for aesthetics */
   background-color: rgba(13, 12, 12, 0.5); /* Semi-transparent background */
   padding: 10px; /* Reduced padding */
   border-radius: 8px; /* Rounded corners */
@@ -246,4 +240,92 @@
 }
 .edit-button:hover {
   background-color: #15b21c; /* Darker green on hover */
+}
+.modal-overlay {
+  /* Background style for modal overlay */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  /* Content styling for modal */
+  background: white;
+  padding: 100px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.saved-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.saved-list-name {
+  padding: 8px 12px;
+  color: #ffffff; /* Ensure text is visible */
+  background-color: blue; /* Match background to parent */
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.saved-list-name:hover {
+  color: #ffffff; /* Darker color on hover */
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.saved-list-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f44336;
+  color: white;
+}
+
+.saved-list-button:hover {
+  background-color: #d32f2f;
+}
+.video-overlay {
+    position: fixed; /* Fixed positioning to overlay the entire viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    display: flex; /* Use flexbox to center the player */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+.video-player {
+    position: relative; /* Positioning for the iframe */
+    width: 80%; /* Width of the video player */
+    max-width: 800px; /* Max width to control size */
+}
+
+.close-button {
+    position: absolute; /* Position the close button in the corner */
+    top: 10px;
+    right: 10px;
+    color: white; /* Button color */
+    background: transparent; /* Transparent background */
+    border: none; /* No border */
+    font-size: 20px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
 }
