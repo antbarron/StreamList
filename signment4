@@ -1,0 +1,37 @@
+[1mdiff --git a/my-react-app/build/asset-manifest.json b/my-react-app/build/asset-manifest.json[m
+[1mindex 6ddc4aef..0f80f7a1 100644[m
+[1m--- a/my-react-app/build/asset-manifest.json[m
+[1m+++ b/my-react-app/build/asset-manifest.json[m
+[36m@@ -1,15 +1,15 @@[m
+ {[m
+   "files": {[m
+[31m-    "main.css": "/static/css/main.ba639d45.css",[m
+[31m-    "main.js": "/static/js/main.4d0eb79b.js",[m
+[32m+[m[32m    "main.css": "/static/css/main.4e18b3c3.css",[m
+[32m+[m[32m    "main.js": "/static/js/main.37b772e4.js",[m
+     "static/media/EZtechmov.png": "/static/media/EZtechmov.523e3ac113932a15d2c3.png",[m
+     "static/media/Social Media.jpeg": "/static/media/Social Media.974572abed22f961daf9.jpeg",[m
+     "index.html": "/index.html",[m
+[31m-    "main.ba639d45.css.map": "/static/css/main.ba639d45.css.map",[m
+[31m-    "main.4d0eb79b.js.map": "/static/js/main.4d0eb79b.js.map"[m
+[32m+[m[32m    "main.4e18b3c3.css.map": "/static/css/main.4e18b3c3.css.map",[m
+[32m+[m[32m    "main.37b772e4.js.map": "/static/js/main.37b772e4.js.map"[m
+   },[m
+   "entrypoints": [[m
+[31m-    "static/css/main.ba639d45.css",[m
+[31m-    "static/js/main.4d0eb79b.js"[m
+[32m+[m[32m    "static/css/main.4e18b3c3.css",[m
+[32m+[m[32m    "static/js/main.37b772e4.js"[m
+   ][m
+ }[m
+\ No newline at end of file[m
+[1mdiff --git a/my-react-app/build/index.html b/my-react-app/build/index.html[m
+[1mindex 4c084e84..535acb6c 100644[m
+[1m--- a/my-react-app/build/index.html[m
+[1m+++ b/my-react-app/build/index.html[m
+[36m@@ -1 +1 @@[m
+[31m-<!doctype html><html lang="en"><head><style>@import url(https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap);</style><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=remove_selection"/><style>.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24}</style><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><script defer="defer" src="/static/js/main.4d0eb79b.js"></script><link href="/static/css/main.ba639d45.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>[m
+\ No newline at end of file[m
+[32m+[m[32m<!doctype html><html lang="en"><head><style>@import url(https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap);</style><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=remove_selection"/><style>.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24}</style><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><script defer="defer" src="/static/js/main.37b772e4.js"></script><link href="/static/css/main.4e18b3c3.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>[m
+\ No newline at end of file[m
+[1mdiff --git a/my-react-app/build/static/css/main.ba639d45.cs
