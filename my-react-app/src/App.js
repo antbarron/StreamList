@@ -15,6 +15,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<StreamList />} />
         <Route path="/movie/:title" element={<Movies />} />
+        <Route path="/movie/:id" element={<Movies />} />
+
         <Route path="/cart" element={<Cart />} />
         <Route path="/about" element={<About />} />
       </Routes>
