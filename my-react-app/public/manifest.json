@@ -1,12 +1,25 @@
 {
-    "manifest_version": 2,
-    "name": "Create React App Sample",
-    "scope": "/",
+    "short_name": "StreamList App",
+    "name": "EZTechMovie-StreamList App",
+    "icons": [
+        {
+            "src": "StreamList.png",
+            "sizes": "64x64 32x32 24x24 16x16",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "StreamList-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "StreamList-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "http://localhost:3000/",
     "display": "standalone",
-    "start_url": "http://127.0.0.1:3000/",
-    "short_name": "React App",
     "theme_color": "#000000",
-    "icons": {
-        "512x512": "logo512.png"
-    }
+    "background_color": "#ffffff"
 }

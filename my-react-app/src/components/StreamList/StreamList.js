@@ -200,7 +200,7 @@ useEffect(() => {
     <div className="stream-list-container">
       <div className="header-container">
         <span className="material-symbols-outlined">theaters</span>
-        <h1 className="inline-heading">Stream List</h1>
+        <h1 className="inline-heading">StreamList</h1>
         <span className="material-symbols-outlined">theaters</span>
       </div>
 
