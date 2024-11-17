@@ -140,12 +140,10 @@ img {
   
   .close-button {
     position: absolute; /* Position the close button in the corner */
-    top: 1000px;
-    right: 10px;
+    top: 600px;
+    right: 20px;
     color: white; /* Button color */
-    background: transparent; /* Transparent background */
     border: none; /* No border */
     font-size: 200px; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
   }
   

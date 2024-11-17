@@ -9,13 +9,13 @@
       'opsz' 24;
   }
   .stream-list-container {
-    
     display: flex;
     flex-direction: column; /* or row, depending on your layout */
     align-items: center; /* centers flex items horizontally */
     justify-content: center; /* centers flex items vertically */
-    width: 80%; /* or any width that suits your layout */
-    margin: 0 auto; /* centers the container */    padding: 15px;
+    width: 50%; /* or any width that suits your layout */
+    margin: 0 auto; /* centers the container */   
+     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f9f9f9;
@@ -24,7 +24,7 @@
   }
   button {
     font-size: 1rem; /* Adjust to ensure it's visible */
-    padding: 10px; /* Ensure padding doesn’t hide text */
+    padding: 5px; /* Ensure padding doesn’t hide text */
     background-color: #395adf; 
     color: white;
 
@@ -85,13 +85,6 @@
     margin-bottom: 10px; /* Space below the input box */
 }
 
-.button-container {
-    display: flex; /* Use flexbox for horizontal alignment */
-    gap: 10px; /* Space between buttons */
-    margin-top: 10px; /* Space above the button container */
-    flex-wrap: wrap; /* Ensures that buttons wrap to the next line if space is limited */
-
-}
 
 .submit-button,
 .save-button {
@@ -149,35 +142,16 @@
   
 }
 .button-container {
-  display: flex;
-  justify-content: flex-end; /* Ensures buttons stay to the right */
+  display: flex; /* Use flexbox to align items horizontally */
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 10px; /* Optional: Adds space between buttons */
 }
 .play-button:hover {
   background-color: #15b21c; /* Darker green on hover */
 }
 
-.dialog {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(1000.5, 1.5, 1.5, .85); /* Semi-transparent background */
-  padding: 20px;
-  font-family: 'Edu AU VIC WA NT Dots', cursive; /* Set the font for the body or specific elements */
-  z-index: 1000;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.dialog-title {
-  font-size: 36px; /* Huge letters */
-  font-weight: bold;
-  color: white;
-  margin-bottom: 20px;
-}
-
 .go-button {
-  background-color: #4062e9; /* Green background */
+  background-color: #4062e9; 
   color: white;
   border: none;
   padding: 10px 20px;
@@ -288,10 +262,6 @@
   color: #ffffff; /* Darker color on hover */
 }
 
-.button-container {
-  display: flex;
-  gap: 10px;
-}
 
 .saved-list-button {
   padding: 5px 10px;
@@ -304,33 +274,4 @@
 
 .saved-list-button:hover {
   background-color: #d32f2f;
-}
-.video-overlay {
-    position: fixed; /* Fixed positioning to overlay the entire viewport */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
-    display: flex; /* Use flexbox to center the player */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    z-index: 1000; /* Ensure it's on top of other content */
-}
-
-.video-player {
-    position: relative; /* Positioning for the iframe */
-    width: 80%; /* Width of the video player */
-    max-width: 800px; /* Max width to control size */
-}
-
-.close-button {
-    position: absolute; /* Position the close button in the corner */
-    top: 10px;
-    right: 10px;
-    color: white; /* Button color */
-    background: transparent; /* Transparent background */
-    border: none; /* No border */
-    font-size: 20px; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
 }

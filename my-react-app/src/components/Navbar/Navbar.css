@@ -9,9 +9,10 @@
 }
 
 .logo {
-  display: flex;
-  align-items: center; /* Align logo and title vertically */
+  width: 150px; /* Adjust size as needed */
+  height: auto;
 }
+
 
 .logo img {
   height: 100px; /* Adjust height as needed */
@@ -23,13 +24,11 @@
   font-size: 24px; /* Adjust font size as needed */
 }
 
-.nav-links {
-  list-style: none; /* Remove bullet points */
-  display: flex; /* Display links in a row */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+@media (max-width: 600px) {
+  .navbar-links {
+    display: none; /* Hide links on small screens */
+  }
 }
-
 .nav-links li {
   margin-left: 20px; /* Space between each link */
 }
@@ -41,4 +40,20 @@
 
 .nav-links a:hover {
   text-decoration: underline; /* Underline on hover */
+}
+.navbar-logo {
+  width: 150px; /* Adjust as needed */
+  height: auto;
+}
+
+@media (min-width: 600px) {
+  .navbar-logo {
+    width: 200px; /* Larger for medium screens */
+  }
+}
+
+@media (min-width: 900px) {
+  .navbar-logo {
+    width: 250px; /* Even larger for wide screens */
+  }
 }

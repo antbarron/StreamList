@@ -5,6 +5,19 @@ const container = document.getElementById('root');
 const root = createRoot(container); // createRoot replaces ReactDOM.render
 root.render(<App />);
 
+// Register the service worker if supported
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register('/service-worker.js')
+      .then((registration) => {
+        console.log('Service Worker registered with scope:', registration.scope);
+      })
+      .catch((error) => {
+        console.log('Service Worker registration failed:', error);
+      });
+  });
+}
 
 /*import React from 'react';
 import ReactDOM from 'react-dom/client';
