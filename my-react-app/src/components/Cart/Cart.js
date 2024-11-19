@@ -56,13 +56,26 @@ useEffect(() => {
         setSalesTax(tax);
     };
 
-    const handlePaymentChange = (e) => {
+   const handlePaymentChange = (e) => {
         const { name, value } = e.target;
-        setPaymentInfo({ ...paymentInfo, [name]: value });
+
+        if (name === 'cardNumber') {
+            const formattedValue = value.replace(/\D/g, '').replace(/(\d{4})(?=\d)/g, '$1 ').trim();
+            setPaymentInfo({ ...paymentInfo, [name]: formattedValue });
+        } else if (name === 'expiration') {
+            const formattedValue = value.replace(/\D/g, '').replace(/(\d{2})(\d{0,2})/, '$1/$2').slice(0, 5);
+            setPaymentInfo({ ...paymentInfo, [name]: formattedValue });
+        } else if (name === 'cvv') {
+            const formattedValue = value.replace(/\D/g, '').slice(0, 3);
+            setPaymentInfo({ ...paymentInfo, [name]: formattedValue });
+        } else {
+            setPaymentInfo({ ...paymentInfo, [name]: value });
+        }
     };
 
     const handlePaymentSubmit = (e) => {
         e.preventDefault();
+        localStorage.setItem('paymentInfo', JSON.stringify(paymentInfo));
         console.log('Payment Information:', paymentInfo);
     };
     // Function to clear selections
