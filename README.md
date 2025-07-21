@@ -1,14 +1,13 @@
-Now that you have created your React app in Week 1 and styled it to your liking, 
-it is time to display the user events on the page and add more friendly icons to the app. 
-For the icons, you may use one of the many free icon websites (like Google Fonts Links to an external site.)
-where coders can download and utilize custom icons that can be used in your code.
+User Event Handling and State Management
 
-Design the StreamList React program.
-Display the user’s event on the website.
-Add more functionality to the webpage.
-Remember that the more user-friendly it is, the better it will be for the user to experience the application.
-For example, think of your favorite website, what makes it seamless, and why it is so popular.
-Clear the user's event input once the submit button has been selected.
-Install the fonts library from one of the many free icon websites (like Google Fonts Links to an external site.) where coders can download and utilize custom icons.
-Program the Navigation system to have several options for the user to choose from.
-Remember that these options must flow seamlessly.
+This branch adds functionality to handle user input and events for managing a movie stream list. Key features include:
+
+State Management: Uses React’s useState to track input field values and the list of submitted movies.
+Event Handling:
+handleInputChange: Updates input state as the user types.
+handleSubmit: Adds non-empty movie titles to the list and clears the input field.
+handleRemove: Removes a movie from the list by index.
+Dialog Control: Implements state-based dialog boxes to prompt users to log in or subscribe before accessing restricted features.
+Routing: Uses useNavigate from React Router to navigate to pages like the cart or movie list when actions are triggered.
+Security Enforcement: Ensures that only authenticated users can access protected views or actions like saving a list.
+This branch focuses on improving interactivity, stateful UI behavior, and basic user access control within the stream list application.
