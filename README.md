@@ -16,4 +16,5 @@ Maintains uniform styling and spacing for inputs and buttons, using relative uni
 Validation: Prevents checkout if required fields (e.g., payment info) are incomplete.
 
 Maintainability: Separates plan data from component logic to simplify updates and extensions.
+
 This branch focuses on delivering a responsive, interactive, and maintainable cart system with a clean user interface and well-organized state and data flow
