@@ -24,12 +24,16 @@ Edit, Delete, and Video Selection Features
 This branch enhances the Streamlist app with functionality for editing and deleting list items, and adds video selection capabilities through YouTube API integration.
 
 Streamlist Component Updates:
+
 	State Variables:
+
 		inputList: Stores an array of movies, each with a unique ID (uuidv4).
 		editText: Temporarily holds the text being edited.
 		editID: Tracks which movie is being edited.
 		message: Displays feedback for actions like adding, editing, or removing items.
+
 	Editing Workflow:
+
 		handleEdit loads selected movie text into editText and sets editID.
 		The edit form appears conditionally based on editID.
 		handleEditSubmit replaces the movie's text in inputList based on editID.
@@ -37,14 +41,21 @@ Streamlist Component Updates:
 		Delete Functionality: A remove button deletes a selected movie and updates the UI immediately.
 
 Movies Component Updates:
+
 	Navigation and State Transfer: 
+
 		Uses useNavigate to pass YouTube search results as state when navigating to the Movies page.
+
 		useLocation retrieves this state to render video options.
+
 		Includes fallback logic to prevent errors if no state is passed.
 
 Video Selection:
+
 	selectedVideo state tracks the chosen video ID.
+
 	handleSelectVideo(videoID) updates the state when a user selects a video.
+
 	Enables the app to load the appropriate video trailer.
 
 These updates improve interactivity in the app by allowing users to manage their movie list more dynamically and preview video content with future support for full playback after subscription.
