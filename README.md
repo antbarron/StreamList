@@ -1,6 +1,6 @@
 The repository has the following structure:
 
-assignment-1: This branch contains the initial setup and basic functionality of the StreaList. It serves as the starting point for the project.
+assignment-1: This branch contains the initial setup and basic functionality of the StreamList. It serves as the starting point for the project.
 
 assignment-2: This branch focused on enhancing the StreamList React program by displaying the user’s input, clearing the event input after submission, integrating custom fonts and icons, and improving the navigation system with multiple user options.
 
